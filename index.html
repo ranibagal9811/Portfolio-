@@ -6,89 +6,71 @@
 <title>Rani Bagal | Portfolio</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: #f5f7fa;
-        color: #333;
-    }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
 
-    header {
-        background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
-        color: white;
-        padding: 60px 20px;
-        text-align: center;
-    }
+header {
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-    header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-    }
+nav {
+    background: #222;
+    padding: 10px;
+    text-align: center;
+}
 
-    nav {
-        background: #222;
-        padding: 12px;
-        text-align: center;
-    }
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
 
-    nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-    }
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-    section {
-        max-width: 1000px;
-        margin: auto;
-        padding: 50px 20px;
-    }
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
 
-    h2 {
-        text-align: center;
-        margin-bottom: 30px;
-    }
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
 
-    .btn {
-        display: inline-block;
-        padding: 10px 16px;
-        margin-top: 10px;
-        background: #111;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        transition: 0.3s;
-    }
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-top: 10px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-    .btn:hover {
-        background: #555;
-        transform: translateY(-2px);
-    }
+.btn:hover {
+    background: #555;
+}
 
-    .projects-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-
-    .project {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        transition: 0.3s;
-    }
-
-    .project:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background: #111;
-        color: white;
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
 </style>
 </head>
 
@@ -98,76 +80,99 @@
     <h1>Rani Bagal</h1>
     <p>Data Science | Data Analysis | Machine Learning</p>
 
-      
+    <a href="https://github.com/ranibagal9811/portfolio/raw/main/Rani_Bagal_Resume.pdf" 
+       class="btn" target="_blank">Download Resume</a>
 </header>
 
 <nav>
-    <a href="#about">About</a>
+    <a href="#summary">Summary</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am an M.Sc. Data Science student at Savitribai Phule Pune University with a strong foundation in statistics, machine learning, and data analysis.
-    </p>
-    <p>
-        I have hands-on experience in Python, SQL, and Power BI, and have built predictive models, performed exploratory data analysis, and developed interactive dashboards.
-    </p>
-    <p>
-        I am passionate about extracting actionable insights from data and solving real-world problems using data-driven approaches.
-    </p>
-    <p>
-        <strong>Academic Strength:</strong> CGPA of 9.13 in B.Sc. Statistics
-    </p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-
-        <div class="project">
-            <h3>Leaf Disease Detection</h3>
-            <p>
-                Developed and deployed a deep learning model to classify plant leaf diseases using image data.
-            </p>
-            <p><strong>Tech:</strong> Python, TensorFlow, CNN, Streamlit</p>
-
-            <a href="https://leafdiseaseapp-ry6zthb7kzvnf4zlc6kygg.streamlit.app/" 
-               class="btn" target="_blank">View App</a>
-        </div>
-
-        <div class="project">
-            <h3>HR Analytics Dashboard</h3>
-            <p>
-                Built an interactive Power BI dashboard to analyze employee attrition and workforce patterns.
-            </p>
-            <p><strong>Tech:</strong> Power BI, Data Analysis</p>
-
-        </div>
-
-        <div class="project">
-            <h3>Fuel Type Analysis (CNG vs EV vs Petrol)</h3>
-            <p>
-                Conducted statistical analysis comparing fuel types based on cost, efficiency, and environmental impact.
-            </p>
-            <p><strong>Tech:</strong> Statistics, Data Visualization</p>
-            
-        </div>
-
+<!-- SUMMARY -->
+<section id="summary">
+    <h2>Summary</h2>
+    <div class="card">
+        <p>
+            M.Sc. Data Science student with a strong foundation in statistics, machine learning, and data analysis. 
+            Experienced in building predictive models, performing exploratory data analysis, and creating dashboards using Python, SQL, and Power BI.
+        </p>
     </div>
 </section>
 
+<!-- EDUCATION -->
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>M.Sc. Data Science</strong><br>
+        Savitribai Phule Pune University (2025–2027)<br>
+        CGPA: 9.45</p>
+
+        <p><strong>B.Sc. Statistics</strong><br>
+        Savitribai Phule Pune University (2022–2025)<br>
+        CGPA: 9.13</p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        <p>
+            Machine Learning, Deep Learning, EDA, Statistical Analysis, Power BI, SQL, Python, Data Visualization, Excel
+        </p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Leaf Disease Detection</h3>
+        <p>Deep learning model to classify plant leaf diseases using image data.</p>
+        <p><strong>Tech:</strong> Python, CNN, TensorFlow, Streamlit</p>
+
+        <!-- ONLY THIS HAS VIEW APP -->
+        <a href="https://leafdiseaseapp-ry6zthb7kzvnf4zlc6kygg.streamlit.app/" 
+           class="btn" target="_blank">View App</a>
+    </div>
+
+    <div class="card">
+        <h3>HR Analytics Dashboard</h3>
+        <p>Power BI dashboard analyzing employee attrition and workforce trends.</p>
+    </div>
+
+    <div class="card">
+        <h3>Fuel Type Analysis</h3>
+        <p>Statistical comparison of CNG, petrol, and electric vehicles.</p>
+    </div>
+
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+    <h2>Resume</h2>
+    <div class="card">
+        <p>You can download my resume here:</p>
+        <a href="https://github.com/ranibagal9811/portfolio/raw/main/Rani_Bagal_Resume.pdf" 
+           class="btn" target="_blank">Download Resume</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
-    <p>Email: ranibagal9811@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/ranibagal9811">github.com/ranibagal9811</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rani-bagal-771b19396/">LinkedIn Profile</a></p>
-
-    <a href="https://github.com/ranibagal9811/portfolio/raw/main/Rani_Bagal_Resume.pdf" 
-       class="btn" target="_blank">Download Resume</a>
+    <div class="card">
+        <p>Email: ranibagal9811@gmail.com</p>
+        <p>Phone: 7558737934</p>
+        <p>GitHub: <a href="https://github.com/ranibagal9811">github.com/ranibagal9811</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rani-bagal-771b19396/">LinkedIn Profile</a></p>
+    </div>
 </section>
 
 <footer>
