@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rani Bagal | Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: #f5f7fa;
+        color: #333;
+    }
+
+    header {
+        background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    header p {
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    nav {
+        background: #222;
+        padding: 12px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    section {
+        max-width: 1000px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 16px;
+        margin-top: 10px;
+        background: #111;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #555;
+        transform: translateY(-2px);
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .project {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #111;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Rani Bagal</h1>
+    <p>Bridging Data Analysis and Machine Learning to solve real-world problems</p>
+    <a href="https://github.com/ranibagal/portfolio/raw/main/Rani_Bagal_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an M.Sc. Data Science student at Savitribai Phule Pune University with a strong foundation in statistics, data analysis, and machine learning. I have hands-on experience in Python, SQL, and Power BI.
+    </p>
+    <p>
+        I have built projects like leaf disease detection, Analysis of Gasoline vs CNG vs Electric Vehicles and analytics dashboards, applying ML and data analysis to real-world problems.
+    </p>
+    <p>
+        <strong>Academic Strength:</strong> CGPA of 9.13 in B.Sc. Statistics.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project">
+            <h3>Leaf Disease Detection</h3>
+            <p>CNN-based model to detect plant diseases from images.</p>
+            <p><strong>Tech:</strong> Python, TensorFlow, Streamlit</p>
+            <a href="https://leafdiseaseapp-ry6zthb7kzvnf4zlc6kygg.streamlit.app/" class="btn" target="_blank">Live Demo</a>
+        </div>
+
+        <div class="project">
+            <h3>Image Caption Generator</h3>
+            <p>CNN + LSTM model to generate captions for images.</p>
+            <p><strong>Tech:</strong> Deep Learning, Python</p>
+            <a href="#" class="btn">GitHub</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ranibagal9811@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/ranibagal9811">github.com/ranibagal</a></p>
+    <p>LinkedIn: <a href="www.linkedin.com/in/rani-bagal/">LinkedIn Profile</a></p>
+    <a href="https://github.com/ranibagal/portfolio/raw/main/Rani_Bagal_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+</section>
+
+<footer>
+    <p>© 2026 Rani Bagal</p>
+</footer>
+
+</body>
+</html>
